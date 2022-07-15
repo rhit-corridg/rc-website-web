@@ -1,6 +1,4 @@
-const emojiFolder = "/home/images/openmoji/";
 const mapFolder = "/home/images/maps/";
-const customEmojiFolder = "/home/images/companyemoji/";
 
 var serversList = [
     ["tycoon-w8r4q4.users.cfx.re","OS", "OS"],
