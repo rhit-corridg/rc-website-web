@@ -4,7 +4,6 @@ import CompanyMembersFilter from './CompanyMembersFilter';
 import CompanySelector from './CompanyMemberButtons/CompanySelector';
 import CustomPaginatedTable from '../../_common/CustomPaginatedTable';
 import DetailsButton from './CompanyMemberButtons/DetailsButton';
-import EditDeadlineButton from './CompanyMemberButtons/EditDeadlineButton';
 import EditInGameButton from './CompanyMemberButtons/EditInGameButton';
 import FormattedNumber from '../../_common/FormattedNumber';
 import { GET_PAGINATED_ALL_MEMBER_DETAILS } from '../../../apollo/paginatedQueries';
@@ -52,8 +51,6 @@ const CompanyMembersTable = props => {
 					className="mx-auto text-center"
 					data-order={new Date(member.deadline).toISOString()}>
 					{dateString.join(' ')}
-
-					<EditDeadlineButton member={member} />
 				</td>
 				<td>
 					<DetailsButton member={member} />
